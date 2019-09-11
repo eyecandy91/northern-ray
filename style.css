@@ -2295,6 +2295,7 @@ li.show {
 .nav-item > a {
     font-weight: 500;
     color: #000000;
+    text-transform: capitalize;
 }
 
 li.nav-item {
