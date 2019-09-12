@@ -2457,6 +2457,10 @@ amend later to put break points in properly */
     margin-bottom: 60px;
 }
 
+footer {
+    font-size: 12px;
+}
+
 /* for the social icons */
 .fa {
     padding: 4px;
