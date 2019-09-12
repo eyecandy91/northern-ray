@@ -624,6 +624,13 @@ th.align-middle {
     background-color: rgba(0, 0, 0, 0.05);
 }
 
+.table-responsive {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
 .form-control {
     display: block;
     width: 100%;
