@@ -76,8 +76,9 @@ get_header();
             <?php if ($head2) : ?>
             <h2 class="w-100"><?php echo $head2 ?></h2>
             <?php endif; ?>
-
+            <div class="table-responsive">
             <?php echo $area2 ?>
+            </div>
             <div class="smallspace" id="fittings">
                 <p>&nbsp;</p>
             </div>
