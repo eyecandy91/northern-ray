@@ -41,9 +41,9 @@ get_header();
 </div> -->
 
 <?php if ($area1) : ?>
-<div class="parallax" style="background-image: url('<?php echo $para_img1_url ?>')"></div>
+<div class="parallax" id="first" style="background-image: url('<?php echo $para_img1_url ?>')"></div>
 
-<div class="smallspace" id="first"></div>
+<div class="smallspace"></div>
 
 <div class="container-fluid">
     <div class="row justify-content-center">
