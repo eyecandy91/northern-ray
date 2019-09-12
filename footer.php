@@ -33,10 +33,10 @@ $li      = myprefix_get_theme_option('linkedin');
             </div>
             <div class="p2 bd-highlight">
                 <!-- <p class="text-center">Twitter | Facebook | LinkedIn</p> -->
-                <span class="whitey"><a href="<?php $in ?>" target="_blank"><i class="fab fa-instagram"></i></a> <a
-                        href="<?php $li ?>" target="_blank"><i class="fab fa-linkedin"></i></a> <a href="<?php $tw ?>"
+                <span class="whitey"><a href="<?php echo $in ?>" target="_blank"><i class="fab fa-instagram"></i></a> <a
+                        href="<?php echo $li ?>" target="_blank"><i class="fab fa-linkedin"></i></a> <a href="<?php echo $tw ?>"
                         target="_blank"><i class="fab fa-twitter"></i></a>
-                    <a href="<?php $fb ?>" target="_blank"><i class="fab fa-facebook"></i></a> </span>
+                    <a href="<?php echo $fb ?>" target="_blank"><i class="fab fa-facebook"></i></a> </span>
             </div>
             <div class="p2 bd-highlight footerlogo">
                 <p><img src="<?php echo get_theme_mod( 'logo_mobile' ); ?>" class="footerlogo" alt="Northern Ray White Logo"></p>
