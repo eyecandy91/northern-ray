@@ -616,6 +616,14 @@ pre code {
     border-top: 2px solid #dee2e6;
 }
 
+th.align-middle {
+    text-align: center;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
 .form-control {
     display: block;
     width: 100%;
@@ -1914,6 +1922,10 @@ a.close.disabled {
     }
 }
 
+.align-middle {
+    vertical-align: middle !important;
+}
+
 .border {
     border: 1px solid #dee2e6 !important;
 }
@@ -2142,6 +2154,14 @@ a[href^="tel"] {
 
 .whitey, span > a {
     color: #ffffff !important;
+}
+
+.tcentered {
+    text-align: center;
+}
+
+.tleft {
+    text-align: left;
 }
 
 .parallax {
@@ -2510,6 +2530,18 @@ amend later to put break points in properly */
 @media only screen and (min-device-width: 1201px) {
     .parallax {
         background-attachment: fixed;
+    }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 700px) {
+    .tablesized {
+        font-size: 0.6em;
+    }
+}
+
+@media only screen and (min-device-width: 10px) and (max-device-width: 374px) {
+    .tablesized {
+        font-size: 0.4em;
     }
 }
 
