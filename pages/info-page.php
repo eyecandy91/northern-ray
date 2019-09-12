@@ -51,7 +51,9 @@ get_header();
             <?php if ($head1) : ?>
             <h2 class="w-100"><?php echo $head1 ?></h2>
             <?php endif; ?>
+            <div class="table-responsive">
             <?php echo $area1 ?>
+            </div>
             <div class="smallspace" id="fittings">
                 <p>&nbsp;</p>
             </div>
@@ -103,7 +105,9 @@ get_header();
             <?php if ($head3) : ?>
             <h2 class="w-100"><?php echo $head3 ?></h2>
             <?php endif; ?>
+            <div class="table-responsive">
             <?php echo $area3?>
+            </div>
             <div class="smallspace" id="fittings">
                 <p>&nbsp;</p>
             </div>
