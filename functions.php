@@ -954,3 +954,14 @@ add_filter( 'admin_footer_text', 'modify_footer' );
 add_filter( 'excerpt_length', function($length) {
     return 13;
 } );
+
+function custom_contact_script_conditional_loading(){
+	//  Edit page IDs here
+	if(! is_page('contact') )
+	{
+	   wp_dequeue_script('contact-form-7'); // Dequeue JS Script file.
+	   wp_dequeue_style('contact-form-7');  // Dequeue CSS file.
+	   wp_dequeue_style('cf7cf-style');  // Dequeue CSS file.
+	}
+ }
+ add_action( 'wp_enqueue_scripts', 'custom_contact_script_conditional_loading' );
