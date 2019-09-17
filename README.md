@@ -1,28 +1,32 @@
 
 **Ez**
 =
-##Contributors: Henry puttick
+**Contributors: Henry puttick**
 
 Requires at least: 4.0
 
 Tested up to: 4.3-alpha
 
-Stable tag: 1.0.3
+Stable tag: 1.0.5
 
 License: GPLv2 or later
 
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-##Description
+**Description**
 =
 Ez Media's starter kit development tmplate for all projects
 
-##Changelog
+**Changelog**
 =
+1.01
+* added dynamic google analytics to header + admin for adding UA Number
+1
+* Active css, added templates,
 0.5
 * Hello world
 
-##Resources
+**Resources**
 =
 * NPM
 * GULP
