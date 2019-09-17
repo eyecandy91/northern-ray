@@ -91,7 +91,7 @@ get_header();
 <?php endif; ?>
 
 <div class="container-fluid">
-    <div class="row justify-content-center">>
+    <div class="row justify-content-center">
 
         <div class="col-lg-10 col-md-11">
             <div class="row justify-content-center">
