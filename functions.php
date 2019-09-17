@@ -543,6 +543,12 @@ function add_subscribers_to_dropdown( $query_args, $r ) {
 					} else {
 						unset( $options['linkedin'] ); // Remove from options if empty
 					}
+					// Input
+					if ( ! empty( $options['ga'] ) ) {
+						$options['ga'] = sanitize_text_field( $options['ga'] );
+					} else {
+						unset( $options['ga'] ); // Remove from options if empty
+					}
 	
 					// // Select
 					// if ( ! empty( $options['select_example'] ) ) {
@@ -624,6 +630,14 @@ function add_subscribers_to_dropdown( $query_args, $r ) {
                 <td>
                     <?php $value = self::get_theme_option( 'linkedin' ); ?>
                     <input type="text" name="theme_options[linkedin]" value="<?php echo esc_attr( $value ); ?>">
+                </td>
+            </tr>
+
+			<tr valign="top">
+                <th scope="row"><?php esc_html_e( 'Google UA Number', 'ez' ); ?></th>
+                <td>
+                    <?php $value = self::get_theme_option( 'ga' ); ?>
+                    <input type="text" name="theme_options[ga]" value="<?php echo esc_attr( $value ); ?>">
                 </td>
             </tr>
 
