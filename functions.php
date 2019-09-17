@@ -571,7 +571,7 @@ function add_subscribers_to_dropdown( $query_args, $r ) {
 
 <div class="wrap">
 
-    <h1><?php esc_html_e( 'OIl baron settings', 'ez' ); ?></h1>
+    <h1><?php esc_html_e( 'Northern Ray settings', 'ez' ); ?></h1>
 
     <form method="post" action="options.php">
 
