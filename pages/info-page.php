@@ -20,7 +20,7 @@ get_header();
 ?>
 
 <div class="justify-content-center d-flex">
-    <div class="col-lg-8 col-md-10 homefrontgrey">
+    <div class="col-lg-8 col-md-10">
         <header>
             <?php the_title( '<h2>', '</h2>' ); ?>
         </header><!-- .page-header -->
