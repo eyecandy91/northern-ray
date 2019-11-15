@@ -6,7 +6,7 @@ get_header();
 ?>
 
 <div class="justify-content-center d-flex order-lg-1 order-3">
-    <div class="col-lg-8 col-md-10 homefrontgrey">
+    <div class="col-lg-8 col-md-10">
         <?php
 		while ( have_posts() ) :
 			the_post();
@@ -29,6 +29,7 @@ get_header();
 
 <?php
 get_template_part( 'template-parts/content', 'gallery' );
+get_template_part( 'template-parts/content', 'latest' );
 ?>
 
 <?php
