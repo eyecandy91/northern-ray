@@ -7,14 +7,14 @@ $paged = (get_query_var('paged')) ? absint(get_query_var('paged')) : 1;
 if ( is_page('northern-ray-blog') ) {
     $args = array(
         'post_type' => 'blog', 
-        'posts_per_page' => 9, 
+        'posts_per_page' => 12, 
         'paged' => $paged,
         'order' => 'ASC',
     );
 } else if ( is_page('northern-ray-news') ) {
     $args = array(
         'post_type' => 'news', 
-        'posts_per_page' => 9, 
+        'posts_per_page' => 12, 
         'paged' => $paged,
         'order' => 'ASC',
     );
@@ -22,6 +22,31 @@ if ( is_page('northern-ray-blog') ) {
 
 $logo = get_theme_mod( 'logo_mobile' ); ?>
 
+<div class="container ">
+    <div class="row">
+        <div class="col-sm-12 months-wrapper">
+            <?php 
+            if ( is_page('northern-ray-blog') ) {
+                $months = array(
+                    'post_type'     => 'blog', 
+                    'type'          => 'monthly',
+                    'echo'          => 0,
+                    'paged'         => $paged,
+                );
+            } else if ( is_page('northern-ray-news') ) {
+                $months = array(
+                    'post_type'     => 'news', 
+                    'type'          => 'monthly',
+                    'echo'          => 0,
+                    'paged'         => $paged,
+                );
+            }
+            echo '<ul class="list-unstyled months"><li class="init">Select a month from the archive<i class="fas fa-chevron-down"></i>
+            </li>'.wp_get_archives($months).'	</ul>';
+            ?>
+        </div>
+    </div>
+</div>
 <div class="container">
     <div class="row">
         <?php $loop = new WP_Query($args); ?>
@@ -49,19 +74,23 @@ $logo = get_theme_mod( 'logo_mobile' ); ?>
         </div>
 
         <?php endwhile;
-    
+    ?>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+
+        <?php 
     if (function_exists("pagination")) {
         pagination($loop->max_num_pages);
     }
     ?>
-
         <?php else: ?>
         <h1>No posts here!</h1>
         <?php endif; ?>
         <?php wp_reset_postdata(); ?>
-
     </div>
 </div>
-
-<?php 
+<?php
 get_footer();?>
