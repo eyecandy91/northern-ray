@@ -62,7 +62,7 @@ get_header();
 </style>
 
 <div class="justify-content-center d-flex">
-    <div class="col-lg-8 col-md-10 homefrontgrey">
+    <div class="col-lg-8 col-md-10">
 
         <div class="row justify-content-center">
             <div class="col-md-6">
