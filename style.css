@@ -1,6 +1,6 @@
 /*!
 
- * Theme Name: northern-ray	
+ *  Theme Name: northern-ray	
  * Theme URI: https://underscores.me/	
  * Author: Ez Media	
  * Author URI: https://ez.media	
@@ -1262,7 +1262,7 @@ fieldset:disabled a.btn {
 .card-body {
     flex: 1 1 auto;
     padding: 1.25rem;
-    min-height: 150px;
+    min-height: 200px;
 }
 
 .card-title {
